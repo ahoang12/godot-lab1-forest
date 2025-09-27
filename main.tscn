@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://6qqh7juuxajo"]
+
+[ext_resource type="Texture2D" uid="uid://c25dbfpfsjxw0" path="res://icon.svg" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://mat3n0l26006" path="res://Screenshot 2025-09-26 at 21.15.38.png" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://2h7j11h2oru5" path="res://tree.tscn" id="3_lquwl"]
+
+[node name="main" type="Node2D"]
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(966, 746)
+texture = ExtResource("1_h2yge")
+
+[node name="rock" type="Sprite2D" parent="."]
+position = Vector2(827, 1067)
+texture = ExtResource("2_1bvp3")
+
+[node name="tree" parent="." instance=ExtResource("3_lquwl")]
+position = Vector2(1012, 1709)
+
+[node name="tree2" parent="." instance=ExtResource("3_lquwl")]
+position = Vector2(1094, 902)
+
+[node name="tree3" parent="." instance=ExtResource("3_lquwl")]
+position = Vector2(78, 965)
